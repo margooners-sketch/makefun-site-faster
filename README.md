@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/site-generator-speed-01-run-20261122/margooners-sketch/makefun-site-faster/rank.svg)](https://make.fun/bounty/site-generator-speed-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=site-generator-speed-01-run-20261122)
 [![reward](https://make.fun/badge/site-generator-speed-01-run-20261122/margooners-sketch/makefun-site-faster/reward.svg)](https://make.fun/bounty/site-generator-speed-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=site-generator-speed-01-run-20261122)
 
-A faster drop-in replacement for makefun-site 1.0.0: builds the same static sites byte-identically, about 2x faster on the practice set. A single dependency-free ES module (`solve.js`) with a fused front-matter/Markdown lexer, memoized slugs and dates, cached link resolution and cached compiled templates.
+A faster drop-in replacement for makefun-site 1.0.0: builds the same static sites byte-identically, about 3x faster than the house baseline on the practice set (median `run()` ~160 ms vs ~540 ms). A single dependency-free ES module (`solve.js`): blocks classified from the first character, a fused inline scan that jumps between special characters, word counting fused into the Markdown pass, memoized slugs and dates, cached link resolution, and each source's card built once.
 
 ## Run it
 
